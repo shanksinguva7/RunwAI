@@ -1,18 +1,77 @@
-# React + Vite
+✈️ RunwAI: Runway Detection Interface
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+RunwAI is a modern web application designed to demonstrate high-precision semantic segmentation for runway detection in aerial imagery. This interface allows users to visualize the capabilities of a ResNet34-UNet model trained to identify airport runways with high accuracy.
 
-Currently, two official plugins are available:
+🔗 Live Demo: Click here to view the Hugging Face Space
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 About The Project
 
-## React Compiler
+Detecting runways in satellite or aerial imagery is a critical task for autonomous navigation and mapping. RunwAI bridges the gap between complex AI models and end-users by providing a clean, responsive React-based interface.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+This website serves as the frontend visualizer for the deep learning backend, allowing users to interact with the model predictions seamlessly.
 
-Note: This will impact Vite dev & build performances.
+🧠 The AI Behind the App
 
-## Expanding the ESLint configuration
+The core intelligence of this application is powered by a ResNet34-UNet model developed by Sumukh Chakkirala.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Model Architecture: ResNet34-UNet
+
+Input Resolution: 1920×1080
+
+Performance:
+
+IoU (Intersection over Union): 92.43%
+
+Dice Score: 95.35%
+
+Training Data: Trained on 3,987 high-resolution aerial images.
+
+Check out the complete model repository and training details here: SumukhChakkirala/ai-yo
+
+🛠️ Tech Stack
+
+Frontend: React
+
+Build Tool: Vite
+
+Styling: CSS / Tailwind (if applicable)
+
+Deployment: Hugging Face Spaces
+
+💻 Getting Started
+
+To run this project locally on your machine, follow these steps.
+
+Prerequisites
+
+Node.js (v14 or higher)
+
+npm (v6 or higher)
+
+Installation
+
+Clone the repository
+
+git clone [https://github.com/shanksinguva7/RunwAI.git](https://github.com/shanksinguva7/RunwAI.git)
+cd RunwAI
+
+
+Install dependencies
+
+npm install
+
+
+Run the development server
+
+npm run dev
+
+
+Open your browser and navigate to the local URL provided (usually http://localhost:5173).
+
+📸 Screenshots
+<img width="1343" height="838" alt="image" src="https://github.com/user-attachments/assets/c68eaddb-1ab4-473f-a6f4-94dce098215b" />
+
+
+📄 License
+
+This project is open source. Feel free to fork and contribute!
